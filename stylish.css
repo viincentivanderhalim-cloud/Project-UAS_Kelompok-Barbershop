@@ -1,0 +1,561 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'times new roman', sans-serif;
+  background: #0b0b0b;
+
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #000;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: gold;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: gold;
+}
+
+.btn-nav {
+  background: gold;
+  color: black !important;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* HERO */
+
+.hero, .sub-hero {
+  height: 80vh;
+  background: url('https://images.unsplash.com/photo-1511920170033-f8396924c348') center/cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.7);
+  padding: 50px;
+  text-align: center;
+}
+
+.overlay h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: gold;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e6c200;
+}
+
+/* SECTION */
+.section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.dark {
+  background: #111;
+}
+
+.title {
+  margin-bottom: 30px;
+}
+
+/* GRID */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* CARD */
+.card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* SERVICE CARD */
+.service-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.price {
+  display: block;
+  margin-top: 10px;
+  color: gold;
+}
+
+/* IMAGE */
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* FORM */
+.form-box {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, select, button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background: gold;
+  cursor: pointer;
+}
+
+/* INFO BOX */
+.info-box {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.highlight {
+  margin-top: 10px;
+  color: gold;
+}
+
+/* TABLE */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th, .table td {
+  border: 1px solid #444;
+  padding: 10px;
+}
+
+.table th {
+  background: gold;
+  color: black;
+}
+
+/* CTA */
+.cta {
+  background: gold;
+  color: black;
+  text-align: center;
+  padding: 50px;
+}
+
+/* FOOTER */
+.footer {
+  background: black;
+  padding: 40px 0;
+}
+
+.footer a {
+  color: gold;
+  text-decoration: none;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .overlay h2 {
+    font-size: 1.5rem;
+  }
+}
+/* ==========================================================
+   PROJECT UAS
+   Captain Barbershop
+
+   Penambahan CSS untuk memenuhi
+   ketentuan UAS.
+
+   Penambahan:
+   1. Form lebih modern
+   2. Textarea
+   3. Search Box
+   4. Tabel
+   5. Tombol Edit
+   6. Tombol Hapus
+   7. Responsive
+========================================================== */
+
+
+
+/* ==========================================================
+   INPUT DAN TEXTAREA
+========================================================== */
+
+.form-box input,
+.form-box select,
+.form-box textarea{
+
+width:100%;
+
+padding:12px;
+
+margin-top:12px;
+
+margin-bottom:15px;
+
+border:1px solid #ccc;
+
+border-radius:8px;
+
+font-size:15px;
+
+font-family:Poppins,sans-serif;
+
+box-sizing:border-box;
+
+}
+
+
+
+/* Area catatan pelanggan */
+
+.form-box textarea{
+
+height:100px;
+
+resize:none;
+
+}
+
+
+
+/* ==========================================================
+   TOMBOL BOOKING
+========================================================== */
+
+.form-box button{
+
+padding:12px 20px;
+
+border:none;
+
+border-radius:8px;
+
+cursor:pointer;
+
+font-size:15px;
+
+margin-right:8px;
+
+transition:0.3s;
+
+}
+
+
+
+/* Efek ketika mouse diarahkan */
+
+.form-box button:hover{
+
+transform:scale(1.03);
+
+}
+
+
+
+/* ==========================================================
+   SEARCH BOOKING
+========================================================== */
+
+#search{
+
+width:100%;
+
+padding:12px;
+
+border-radius:8px;
+
+border:1px solid #ccc;
+
+margin-bottom:20px;
+
+font-size:15px;
+
+}
+
+
+
+/* ==========================================================
+   TABEL BOOKING
+========================================================== */
+
+.table{
+
+width:100%;
+
+border-collapse:collapse;
+
+margin-top:20px;
+
+}
+
+
+
+.table th{
+
+padding:12px;
+
+}
+
+
+
+.table td{
+
+padding:12px;
+
+text-align:center;
+
+}
+
+
+
+.table tr{
+
+border-bottom:1px solid #ddd;
+
+}
+
+
+
+/* Efek hover */
+
+.table tbody tr:hover{
+
+background:#f4f4f4;
+
+}
+
+
+
+/* ==========================================================
+   TOMBOL EDIT
+========================================================== */
+
+.table button{
+
+padding:8px 14px;
+
+border:none;
+
+border-radius:6px;
+
+cursor:pointer;
+
+margin:2px;
+
+font-size:13px;
+
+transition:0.3s;
+
+}
+
+
+
+/* Hover */
+
+.table button:hover{
+
+transform:scale(1.05);
+
+}
+
+
+
+/* ==========================================================
+   KARTU TOTAL BOOKING
+========================================================== */
+
+#bookingCount{
+
+font-size:55px;
+
+margin-top:10px;
+
+margin-bottom:10px;
+
+}
+
+
+
+/* ==========================================================
+   RESPONSIVE TABLET
+========================================================== */
+
+@media(max-width:768px){
+
+.grid-2{
+
+grid-template-columns:1fr;
+
+}
+
+.grid-3{
+
+grid-template-columns:1fr;
+
+}
+
+.nav-container{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.table{
+
+font-size:13px;
+
+overflow-x:auto;
+
+display:block;
+
+}
+
+}
+
+
+
+/* ==========================================================
+   RESPONSIVE MOBILE
+========================================================== */
+
+@media(max-width:480px){
+
+.hero h2{
+
+font-size:30px;
+
+}
+
+.hero p{
+
+font-size:15px;
+
+}
+
+.form-box,
+
+.info-box{
+
+padding:20px;
+
+}
+
+.navbar nav{
+
+display:flex;
+
+flex-direction:column;
+
+gap:10px;
+
+}
+
+.btn,
+
+.btn-nav{
+
+width:100%;
+
+text-align:center;
+
+}
+
+}
