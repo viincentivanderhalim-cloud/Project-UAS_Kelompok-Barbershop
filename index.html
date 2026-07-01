@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ==========================
+         PROJECT UAS
+         Captain Barbershop
+         Pengembangan dari Project UTS
+         ========================== -->
+
+    <title>Captain Barbershop</title>
+
+    <link rel="stylesheet" href="stylish.css">
+</head>
+
+<body>
+
+    <!-- ======================================================
+         UTS
+         Navbar utama website
+         Digunakan untuk berpindah halaman
+    ======================================================= -->
+
+    <header class="navbar">
+        <div class="container nav-container">
+
+            <h1 class="logo">Captain Barbershop</h1>
+
+            <nav>
+
+                <a href="#home">Home</a>
+
+                <a href="#about">About</a>
+
+                <a href="#services">Services</a>
+
+                <a href="booking.html">Booking</a>
+
+                <!-- ===============================
+                     FITUR BARU UAS
+                     Halaman daftar booking
+                ================================ -->
+
+                <a href="bookings.html" class="btn-nav">
+                    Booking List
+                </a>
+
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- ======================================================
+         UTS
+         Hero Section
+         Menampilkan tampilan awal website
+    ======================================================= -->
+
+    <section id="home" class="hero">
+
+        <div class="overlay">
+
+            <h2>Premium Grooming Experience</h2>
+
+            <p>
+                Rasakan layanan barbershop terbaik
+                dengan kualitas premium.
+            </p>
+
+            <a href="booking.html" class="btn">
+                Reservasi Sekarang
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================================
+         UTS
+         About Section
+    ======================================================= -->
+
+    <section id="about" class="section">
+
+        <div class="container grid-2">
+
+            <div>
+
+                <h2>Tentang Kami</h2>
+
+                <p>
+
+                    Captain Barbershop merupakan barbershop modern
+                    yang menyediakan layanan potong rambut,
+                    beard styling, dan hair spa.
+
+                    Dengan barber profesional dan fasilitas
+                    yang nyaman, kami selalu berusaha memberikan
+                    pengalaman terbaik kepada setiap pelanggan.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================================
+         UTS
+         Daftar layanan
+    ======================================================= -->
+
+    <section id="services" class="section dark">
+
+        <h2 class="title">
+            Layanan Kami
+        </h2>
+
+        <div class="container grid-3">
+
+            <div class="card">
+
+                <h3>Haircut</h3>
+
+                <p>
+                    Potongan rambut modern sesuai tren.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Beard Styling</h3>
+
+                <p>
+                    Perawatan dan styling jenggot profesional.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Hair Spa</h3>
+
+                <p>
+                    Relaksasi dan perawatan rambut premium.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================================
+         UTS
+         Data Barber
+    ======================================================= -->
+
+    <section id="barber" class="section">
+
+        <h2 class="title">
+            Barber Profesional
+        </h2>
+
+        <div class="container grid-3">
+
+            <div class="card">
+
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John">
+
+                <h3>John</h3>
+
+                <p>Fade Specialist</p>
+
+            </div>
+
+            <div class="card">
+
+                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael">
+
+                <h3>Michael</h3>
+
+                <p>Hair Stylist</p>
+
+            </div>
+
+            <div class="card">
+
+                <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="David">
+
+                <h3>David</h3>
+
+                <p>Beard Expert</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================================
+         UTS
+         Testimoni pelanggan
+    ======================================================= -->
+
+    <section class="section">
+
+        <h2 class="title">
+            Testimoni
+        </h2>
+
+        <div class="container grid-3">
+
+            <div class="card">
+
+                ⭐⭐⭐⭐⭐
+
+                <p>
+                    Pelayanan terbaik,
+                    sangat puas.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                ⭐⭐⭐⭐⭐
+
+                <p>
+                    Tempat nyaman
+                    dan barber profesional.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                ⭐⭐⭐⭐⭐
+
+                <p>
+                    Sangat direkomendasikan.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================================
+         FITUR BARU UAS
+         Menampilkan jumlah booking
+         Nilainya diambil dari JavaScript
+    ======================================================= -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="card">
+
+                <h2>Total Booking Hari Ini</h2>
+
+                <h1 id="bookingCount">
+                    0
+                </h1>
+
+                <p>
+                    Data akan diperbarui secara otomatis.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ======================================================
+         UTS
+         Call To Action
+    ======================================================= -->
+
+    <section class="cta">
+
+        <h2>
+
+            Siap tampil lebih percaya diri?
+
+        </h2>
+
+        <a href="booking.html" class="btn">
+
+            Booking Sekarang
+
+        </a>
+
+    </section>
+
+    <!-- ======================================================
+         UTS
+         Footer Website
+    ======================================================= -->
+
+    <footer class="footer">
+
+        <div class="container grid-3">
+
+            <div>
+
+                <h3>Captain Barbershop</h3>
+
+                <p>
+
+                    Barbershop premium
+                    dengan pelayanan terbaik.
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Menu</h3>
+
+                <p><a href="#home">Home</a></p>
+
+                <p><a href="#about">About</a></p>
+
+                <p><a href="#services">Services</a></p>
+
+                <p><a href="booking.html">Booking</a></p>
+
+                <p><a href="bookings.html">Booking List</a></p>
+
+            </div>
+
+            <div>
+
+                <h3>Kontak</h3>
+
+                <p>Jl. Medan No.1</p>
+
+                <p>0812-3456-7890</p>
+
+                <p>captainbarbershop@email.com</p>
+
+            </div>
+
+        </div>
+
+        <p class="copyright">
+
+            © 2026 Captain Barbershop.
+            All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+    <!-- ======================================================
+         FITUR BARU UAS
+         Menghubungkan seluruh JavaScript website
+    ======================================================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
