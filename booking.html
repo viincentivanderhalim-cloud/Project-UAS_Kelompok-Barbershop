@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Captain Barbershop</title>
+    <link rel="stylesheet" href="stylish.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <h1 class="logo">Captain Barbershop</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="index.html#services">Services</a>
+                <a href="booking.html" class="btn-nav">Booking</a>
+
+                <!-- ==========================
+                        PENAMBAHAN UAS
+                       Menu menuju daftar booking
+                   =========================== -->
+
+                <a href="bookings.html">Booking List</a>
+
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="sub-hero">
+        <div class="overlay">
+            <h2>Reservasi Barbershop</h2>
+            <p>Booking jadwal Anda sekarang</p>
+        </div>
+    </section>
+
+    <!-- BOOKING FORM -->
+    <section class="section">
+        <div class="container grid-2">
+
+            <!-- FORM -->
+            <div class="form-box">
+                <h2>Form Booking</h2>
+
+                <form id="form">
+                    <input id="name" type="text" placeholder="Nama Lengkap" required>
+                    <input id="email" type="email" placeholder="Email" required>
+                    <!-- ==========================
+                            PENAMBAHAN UAS
+                           Nomor HP pelanggan
+                        =========================== -->
+
+                    <input id="phone" type="tel" placeholder="Nomor HP" required>
+                    <input id="date" type="date" required>
+                    <input id="time" type="time" required>
+
+                    <select id="service" required>
+                        <option value="">
+                            Pilih Layanan
+                        </option>
+
+                        <option>Haircut</option>
+                        <option>Beard Styling</option>
+                        <option>Hair Spa</option>
+                    </select>
+                    <option>Haircut</option>
+                    <option>Beard Styling</option>
+                    <option>Hair Spa</option>
+                    </select>
+
+                    <select id="barber" required>
+
+                        <option value="">
+                            Pilih Barber
+                        </option>
+
+                        <option>John</option>
+                        <option>Michael</option>
+                        <option>David</option>
+
+                    </select>
+                    <!-- ==========================
+                        PENAMBAHAN UAS
+                        Catatan pelanggan
+                    =========================== -->
+
+                    <textarea id="note" placeholder="Catatan Tambahan"></textarea>
+                    <button type="submit">Booking Sekarang</button>
+                    <button type="reset">
+
+                        Reset Form
+
+                    </button>
+                </form>
+                <!-- ==========================
+                        PENAMBAHAN UAS
+                =========================== -->
+                <br>
+                <a href="bookings.html" class="btn">
+
+                    Lihat Semua Booking
+
+                </a>
+            </div>
+
+            <!-- INFO -->
+            <div class="info-box">
+                <h2>Informasi</h2>
+                <p>Jam Operasional: 09:00 - 21:00</p>
+                <p>Alamat: Jl. Medan No.1</p>
+                <p>Telepon: 0812-3456-7890</p>
+
+                <div class="highlight">
+                    <p>⚠ Booking harus dilakukan minimal 1 hari sebelumnya</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TABEL DATA -->
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Email</th>
+                    <th>Tanggal</th>
+                    <th>Jam</th>
+                    <th>Layanan</th>
+                    <th>Barber</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="table"></tbody>
+        </table>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container grid-3">
+
+            <div>
+                <h3>Captain Barbershop</h3>
+                <p>Barbershop premium dengan pelayanan terbaik.</p>
+            </div>
+
+            <div>
+                <h3>Menu</h3>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="index.html#services">Services</a></p>
+            </div>
+
+            <div>
+                <h3>Kontak</h3>
+                <p>0812-3456-7890</p>
+                <p>CaptainBarbershop@email.com</p>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Captain Barbershop
+        </p>
+    </footer>
+    <!-- ==========================
+            PENAMBAHAN UAS
+        Menghubungkan JavaScript
+    =========================== -->
+    <script src="script.js"></script>
+</body>
+
+</html>
