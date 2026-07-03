@@ -60,7 +60,8 @@ nav a:hover {
 
 /* HERO */
 
-.hero, .sub-hero {
+.hero,
+.sub-hero {
   height: 80vh;
   background: url('https://images.unsplash.com/photo-1511920170033-f8396924c348') center/cover;
   background-attachment: fixed;
@@ -70,7 +71,7 @@ nav a:hover {
 }
 
 .overlay {
-  background: rgba(0,0,0,0.7);
+  background: rgba(0, 0, 0, 0.7);
   padding: 50px;
   text-align: center;
 }
@@ -173,7 +174,9 @@ form {
   gap: 10px;
 }
 
-input, select, button {
+input,
+select,
+button {
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -203,7 +206,8 @@ button {
   margin-top: 20px;
 }
 
-.table th, .table td {
+.table th,
+.table td {
   border: 1px solid #444;
   padding: 10px;
 }
@@ -243,6 +247,7 @@ copyright {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+
   .grid-2,
   .grid-3,
   .grid-4 {
@@ -253,6 +258,7 @@ copyright {
     font-size: 1.5rem;
   }
 }
+
 /* ==========================================================
    PROJECT UAS
   
@@ -266,25 +272,25 @@ copyright {
 
 .form-box input,
 .form-box select,
-.form-box textarea{
+.form-box textarea {
 
-width:100%;
+  width: 100%;
 
-padding:12px;
+  padding: 12px;
 
-margin-top:12px;
+  margin-top: 12px;
 
-margin-bottom:15px;
+  margin-bottom: 15px;
 
-border:1px solid #ccc;
+  border: 1px solid #ccc;
 
-border-radius:8px;
+  border-radius: 8px;
 
-font-size:15px;
+  font-size: 15px;
 
-font-family:Poppins,sans-serif;
+  font-family: Poppins, sans-serif;
 
-box-sizing:border-box;
+  box-sizing: border-box;
 
 }
 
@@ -292,11 +298,11 @@ box-sizing:border-box;
 
 /* Area catatan pelanggan */
 
-.form-box textarea{
+.form-box textarea {
 
-height:100px;
+  height: 100px;
 
-resize:none;
+  resize: none;
 
 }
 
@@ -306,21 +312,21 @@ resize:none;
    TOMBOL BOOKING
 ========================================================== */
 
-.form-box button{
+.form-box button {
 
-padding:12px 20px;
+  padding: 12px 20px;
 
-border:none;
+  border: none;
 
-border-radius:8px;
+  border-radius: 8px;
 
-cursor:pointer;
+  cursor: pointer;
 
-font-size:15px;
+  font-size: 15px;
 
-margin-right:8px;
+  margin-right: 8px;
 
-transition:0.3s;
+  transition: 0.3s;
 
 }
 
@@ -328,9 +334,9 @@ transition:0.3s;
 
 /* Efek ketika mouse diarahkan */
 
-.form-box button:hover{
+.form-box button:hover {
 
-transform:scale(1.03);
+  transform: scale(1.03);
 
 }
 
@@ -340,19 +346,19 @@ transform:scale(1.03);
    SEARCH BOOKING
 ========================================================== */
 
-#search{
+#search {
 
-width:100%;
+  width: 100%;
 
-padding:12px;
+  padding: 12px;
 
-border-radius:8px;
+  border-radius: 8px;
 
-border:1px solid #ccc;
+  border: 1px solid #ccc;
 
-margin-bottom:20px;
+  margin-bottom: 20px;
 
-font-size:15px;
+  font-size: 15px;
 
 }
 
@@ -362,39 +368,39 @@ font-size:15px;
    TABEL BOOKING
 ========================================================== */
 
-.table{
+.table {
 
-width:100%;
+  width: 100%;
 
-border-collapse:collapse;
+  border-collapse: collapse;
 
-margin-top:20px;
-
-}
-
-
-
-.table th{
-
-padding:12px;
+  margin-top: 20px;
 
 }
 
 
 
-.table td{
+.table th {
 
-padding:12px;
-
-text-align:center;
+  padding: 12px;
 
 }
 
 
 
-.table tr{
+.table td {
 
-border-bottom:1px solid #ddd;
+  padding: 12px;
+
+  text-align: center;
+
+}
+
+
+
+.table tr {
+
+  border-bottom: 1px solid #ddd;
 
 }
 
@@ -402,9 +408,9 @@ border-bottom:1px solid #ddd;
 
 /* Efek hover */
 
-.table tbody tr:hover{
+.table tbody tr:hover {
 
-background:#f4f4f4;
+  background: #f4f4f4;
 
 }
 
@@ -414,21 +420,21 @@ background:#f4f4f4;
    TOMBOL EDIT
 ========================================================== */
 
-.table button{
+.table button {
 
-padding:8px 14px;
+  padding: 8px 14px;
 
-border:none;
+  border: none;
 
-border-radius:6px;
+  border-radius: 6px;
 
-cursor:pointer;
+  cursor: pointer;
 
-margin:2px;
+  margin: 2px;
 
-font-size:13px;
+  font-size: 13px;
 
-transition:0.3s;
+  transition: 0.3s;
 
 }
 
@@ -436,9 +442,9 @@ transition:0.3s;
 
 /* Hover */
 
-.table button:hover{
+.table button:hover {
 
-transform:scale(1.05);
+  transform: scale(1.05);
 
 }
 
@@ -448,13 +454,13 @@ transform:scale(1.05);
    KARTU TOTAL BOOKING
 ========================================================== */
 
-#bookingCount{
+#bookingCount {
 
-font-size:55px;
+  font-size: 55px;
 
-margin-top:10px;
+  margin-top: 10px;
 
-margin-bottom:10px;
+  margin-bottom: 10px;
 
 }
 
@@ -464,37 +470,37 @@ margin-bottom:10px;
    RESPONSIVE TABLET
 ========================================================== */
 
-@media(max-width:768px){
+@media(max-width:768px) {
 
-.grid-2{
+  .grid-2 {
 
-grid-template-columns:1fr;
+    grid-template-columns: 1fr;
 
-}
+  }
 
-.grid-3{
+  .grid-3 {
 
-grid-template-columns:1fr;
+    grid-template-columns: 1fr;
 
-}
+  }
 
-.nav-container{
+  .nav-container {
 
-flex-direction:column;
+    flex-direction: column;
 
-text-align:center;
+    text-align: center;
 
-}
+  }
 
-.table{
+  .table {
 
-font-size:13px;
+    font-size: 13px;
 
-overflow-x:auto;
+    overflow-x: auto;
 
-display:block;
+    display: block;
 
-}
+  }
 
 }
 
@@ -504,46 +510,70 @@ display:block;
    RESPONSIVE MOBILE
 ========================================================== */
 
-@media(max-width:480px){
+@media(max-width:480px) {
 
-.hero h2{
+  .hero h2 {
 
-font-size:30px;
+    font-size: 30px;
+
+  }
+
+  .hero p {
+
+    font-size: 15px;
+
+  }
+
+  .form-box,
+
+  .info-box {
+
+    padding: 20px;
+
+  }
+
+  .navbar nav {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+  }
+
+  .btn,
+
+  .btn-nav {
+
+    width: 100%;
+
+    text-align: center;
+
+  }
 
 }
 
-.hero p{
+/* ==========================================================
+   FITUR BARU
+   Persetujuan Booking
+========================================================== */
 
-font-size:15px;
-
+.agreement {
+  margin: 15px 0;
+  text-align: left;
 }
 
-.form-box,
-
-.info-box{
-
-padding:20px;
-
+.agreement label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
-.navbar nav{
-
-display:flex;
-
-flex-direction:column;
-
-gap:10px;
-
-}
-
-.btn,
-
-.btn-nav{
-
-width:100%;
-
-text-align:center;
-
-}
-
+.agreement input[type="checkbox"] {
+  width: auto;
+  margin-top: 3px;
 }
