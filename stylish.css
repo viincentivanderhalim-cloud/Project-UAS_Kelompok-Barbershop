@@ -577,3 +577,15 @@ copyright {
   width: auto;
   margin-top: 3px;
 }
+
+#resultCount {
+
+  margin-bottom: 15px;
+
+  color: gold;
+
+  font-weight: bold;
+
+  font-size: 16px;
+
+}

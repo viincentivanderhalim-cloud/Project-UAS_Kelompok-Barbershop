@@ -30,6 +30,7 @@ const form = document.getElementById("form");
 const table = document.getElementById("table");
 const search = document.getElementById("search");
 const bookingCount = document.getElementById("bookingCount");
+const resultCount = document.getElementById("resultCount");
 
 
 
@@ -221,6 +222,13 @@ form.reset();
 ========================================================== */
 
 function tampilkanBooking() {
+
+    if(resultCount){
+
+    resultCount.textContent =
+    "Total Booking Ditampilkan : " + bookings.length;
+
+}
 
     /* Jika halaman tidak memiliki tabel,
        maka fungsi dihentikan. */
@@ -457,21 +465,21 @@ if(search){
 
 search.addEventListener("keyup",function(){
 
-    let keyword =
-    search.value.toLowerCase();
+    let keyword = search.value.toLowerCase();
 
-    let baris =
-    document.querySelectorAll("#table tr");
+    let baris = document.querySelectorAll("#table tr");
 
+    let jumlah = 0;
 
     baris.forEach(function(row){
 
-        let nama =
-        row.cells[0].innerText.toLowerCase();
+        let nama = row.cells[0].innerText.toLowerCase();
 
         if(nama.includes(keyword)){
 
             row.style.display="";
+
+            jumlah++;
 
         }
 
@@ -482,6 +490,13 @@ search.addEventListener("keyup",function(){
         }
 
     });
+
+    if(resultCount){
+
+        resultCount.textContent =
+        "Total Booking Ditampilkan : " + jumlah;
+
+    }
 
 });
 
